@@ -1,0 +1,64 @@
+﻿<!--
+Author: WebThemez
+Author URL: http://webthemez.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+@{
+                /**/
+
+                ViewBag.Title = "GalleryDetails";
+                Layout = "~/Views/_LayoutPage.cshtml";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>About - Techro Bootstrap template</title>
+
+</head>
+
+<body>
+    <!-- Fixed navbar -->
+    <!-- /.navbar -->
+
+    <header id="head" class="secondary">
+        <div class="container">
+            <h1>Gallery</h1>
+            <p>Check out our Images</p>
+        </div>
+    </header>
+
+
+    <div class="container">
+        <h3>Gallery</h3>
+        <p>
+            Check out our Projects, Webinars, Workshops Images etc...
+        </p>
+        <br />
+        <ul class="list-unstyled video-list-thumbs row">
+            @*@foreach (var item in Model)
+                {
+                    <li class="col-lg-3 col-sm-4 col-xs-6">
+                        <img src="~/GalleryImages/@item.GalleryFolder" alt="Barca" class="img-responsive" height="130px" />
+                    </li>
+                }*@
+
+            @for (int i = 1; i <= 30; i++)
+            {
+                string image = "g" + i + ".jpeg";
+                <li class="col-lg-3 col-sm-4 col-xs-6">
+                    <img src="~/GalleryImages/@image" alt="Barca" class="img-responsive" height="130px" />
+                </li>
+            }
+        </ul>
+
+    </div>
+    <!-- /container -->
+    <!-- JavaScript libs are placed at the end of the document so the pages load faster -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    @*<script src="~/assets/js/custom.js"></script>*@
+</body>
+</html>

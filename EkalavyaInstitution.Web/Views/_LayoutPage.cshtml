@@ -1,0 +1,219 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <style>
+        .navbar-inverse .navbar-brand img {
+            width: unset !important;
+        }
+    </style>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="free-educational-responsive-web-template-webEdu">
+    <meta name="author" content="webThemez.com">
+    <title>Ekalavya Group of Technologies</title>
+    <link rel="icon" href="~/assets/images/logo.png" type="image/x-icon">
+    <link rel="favicon" href="~/assets/images/favicon.png">
+    <link rel="stylesheet" media="screen" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+    <link rel="stylesheet" href="~/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="~/assets/css/bootstrap-theme.css" media="screen">
+    <link rel="stylesheet" href="~/assets/css/style.css">
+
+</head>
+<body>
+    <div class="navbar navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+
+                <!-- Button for smallest screens -->
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                <ul>
+                    <li>
+                        <a class="navbar-brand" href="#" onclick="location.href='@Url.Action("Index","Home")'">
+                            <img src="~/assets/images/logo.png" alt="Ekalavya">
+                        </a>
+                    </li>
+                    <li> <h5 id="applogo">Ekalavya Group of Technologies</h5></li>
+                </ul>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav pull-right mainNav" id="myTab">
+                        <li><a href="#" data-toggle="tab" onclick="location.href='@Url.Action("Index", "Home")'">Home</a></li>
+                        <li><a href="#" data-toggle="tab" onclick="location.href='@Url.Action("AboutUs", "Home")'">About</a></li>
+                        @*<li><a href="#" onclick="location.href='@Url.Action("Event", "Event")'" data-toggle="tab">Events</a></li>*@
+                        <li><a href="#" onclick="location.href='@Url.Action("Gallery", "Home")'" data-toggle="tab">Gallery</a></li>
+                        @*<li><a href="videos.html">Videos</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                    <li><a href="sidebar-right.html">Right Sidebar</a></li>
+                    <li><a href="#">Dummy Link1</a></li>
+                    <li><a href="#">Dummy Link2</a></li>
+                    <li><a href="#">Dummy Link3</a></li>
+                </ul>
+            </li>*@
+                        <li><a href="#" onclick="location.href='@Url.Action("Contact", "Home")'">Contact</a></li>
+                   
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </div>
+    <div>
+        @RenderBody()
+    </div>
+  
+    <footer id="footer">
+
+        <div class="container">
+            <div class="row">
+                <div class="footerbottom">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="footerwidget">
+                            <h4>Services</h4>
+                            <div class="menu-course">
+                                <ul class="menu">
+                                    <li>
+                                        <a href="#">Trainings</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Webinars</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Academic and Research Projects</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Publications</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Coaching</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Internships</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Workshops</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                            <div class="footerwidget">
+                                <h4>
+                                    Technologies for BTech
+                                </h4>
+                                <div class="menu-course">
+                                    <ul class="menu">
+                                        <li>
+                                            <a href="#">
+                                                ECE - Embedded, IOT, VLSI, Matlab, Multisim
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                EEE - Power Systems, Labview, Matlab, Solar Power Generation, Converts
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                CSE - Web Applications, Python, IOT, Android, Java
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                IT - Web Applications, Python, IOT, Android, Java
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    <div class="col-md-3 col-sm-6">
+                            <div class="footerwidget">
+                                <h4>
+                                    Technologies for MTech
+                                </h4>
+                                <div class="menu-course">
+                                    <ul class="menu">
+                                        <li>
+                                            <a href="#">
+                                               EMBEDDED - VLSI,DECS, Robotics, Embedded and VLSI, Computer Engineering
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                POWER SYSTEMS - Renewable Energy, Power Systems, Power Electronics
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                               COMPUTER SCIENCE - Computer Networks, Multimedia, Course Ware, AI
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="footerwidget">
+                            <h4>Contact</h4>
+                            <p>Ekalavya Group of Techologies</p>
+                            <div class="contact-info">
+                                <i class="fa fa-map-marker"></i> Near Bus stop, A.Rangampeta, Tirupathi-517102, Andhra Pradesh, India<br>
+                                <i class="fa fa-phone"></i> +91 8553182540 <br>
+                                <i class="fa fa-envelope-o"></i> info.ekalavyaprojectpoint@gmail.com
+                            </div>
+                        </div><!-- end widget -->
+                    </div>
+                    
+
+                </div>
+            </div>
+            <div class="social text-center">
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="https://m.facebook.com/EkalavayGroupOfTechnologies/?ref=bookmarks"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.linkedin.com/in/ekalavya-group-of-technologies-848a74189/"><i class="fa fa-linkedin-square"></i></a>
+                <a href="https://www.youtube.com/channel/UCqmhoYL5rFfmOArcPlneY_Q"><i class="fa fa-youtube"></i></a>
+            </div>
+
+            <div class="clear"></div>
+            <!--CLEAR FLOATS-->
+        </div>
+        <div class="footer2">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-6 panel">
+                        <div class="panel-body">
+                            <p class="simplenav">
+                                <a href="#" onclick="location.href='@Url.Action("Index", "Home")'">Home</a> |
+                                <a href="#" onclick="location.href='@Url.Action("AboutUs", "Home")'">About</a> |
+                                <a href="#" onclick="location.href='@Url.Action("Gallery", "Home")'">Gallery</a> |
+                                <a href="#" onclick="location.href='@Url.Action("Contact", "Home")'">Contact</a>
+                            </p>
+                        </div>
+                    </div>
+                    @*<div class="col-md-6 panel">
+                        <div class="panel-body">
+                            <p class="text-right">
+                                Copyright &copy; 2014. Template by <a href="http://webthemez.com/" rel="develop">WebThemez.com</a>
+                            </p>
+                        </div>
+                    </div>*@
+
+                </div>
+                <!-- /row of panels -->
+            </div>
+        </div>
+    </footer>    
+  
+</body>
+</html>
